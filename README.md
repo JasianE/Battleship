@@ -6,4 +6,10 @@
 ### Battle ship the game
 
 ## Live
-### https://sleepy-scrubland-83676.herokuapp.com/
+### https://battleship-2da8b.web.app
+
+## Update 2024 
+
+### RAHHHHHH I'm back1!!
+### Literally only added a new working link but whatever
+### expect great things to come.......... :DDdDDD
