@@ -21,3 +21,9 @@
 ### expect great things to come.......... :DDdDDD
 ### While this project wasn't the most complicated project I did, it was the most influencial on me in terms of coding
 ### This project used react and vanilla css using some design principles that were recommended by the odin project
+
+## Update 2025
+
+* Fixed grids issues
+* Added place thing
+* Fixed deployment
