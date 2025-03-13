@@ -2,14 +2,16 @@
     height: 80px;
     width: 80px;
     border-style: solid;
-    float: left
-    
+    float: left;
+    padding: 0;
 }
 .placeBoardContainer{
    width: 760px;
    height: 600px;
    align-self: center;
    margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .placed{
     border-style: solid;
@@ -19,6 +21,9 @@
     background-color: grey;
 }
 .playerBoard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     position: absolute;
     max-width: 760px;
     min-width: 760px;
@@ -37,6 +42,7 @@
      border-style: solid;
  }
  .computerBoard{
+     display: grid;
      max-width: 760px;
      min-width: 760px;
      min-height: 600px;
@@ -46,6 +52,7 @@
      position: absolute;
      width: 760px;
      height: 600px;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
  }
  .correct{
     height: 80px;
@@ -67,4 +74,15 @@
     background-color: rgb(0, 0, 0);
     border-style: solid;
     float: left
+ }
+ .container_main{
+    display: flex;
+    padding-left: 10vw;
+ }
+ .selection_box{
+    margin-left: 5vw;
+ }
+ .turd_container{
+    display: flex;
+    flex-direction: column;
  }

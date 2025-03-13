@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Gameboard from './Factories/Gameboard'
 import Game from './Game'
 import GenerateEnemyBoard from './GenerateEnemyBoard'
+import createTurds from './createTurds'
 import '../Styles/Board.css'
 function PlaceBoard(){
     //Create Gameboard information and whatnot that will be used for all the logic here btw im writing this comment 3 days after writing the code because jun you 
@@ -17,7 +18,9 @@ function PlaceBoard(){
         setEnemy(GenerateEnemyBoard())
     }, [])
     return(
-        <div>
+        //This is 2025 Jun looking at 2021 jun's code, I love my grade 8 self hes such a twerp 
+        //Can't understand shit though
+        <div className="container_main">
             {/*Map through the gameboard elements and conditionally check whether or not all ships have been placed*/}
             {iterations === 5 ? 
                 //Pass in both boards as props so epic
@@ -140,12 +143,12 @@ function PlaceBoard(){
                                 }
                                 if(iterations === 4){
                                     if(key.placed === true || select.elements[key.number].placed === true){
-                                        alert('No')
+                                        alert('Out of bounds.')
                                     }
                                     else if((key.number > 7 && key.number < 9) || (key.number > 15 && key.number < 17) || (key.number > 23 && key.number < 25) ||
                                     (key.number > 31 && key.number < 33) || (key.number > 39 && key.number < 41) || 
                                     (key.number > 47 && key.number < 49) || (key.number > 55 && key.number < 57) || (key.number > 62)){
-                                        alert('Bo')
+                                        alert('Out of bound.')
                                     }
                                     else{
                                         let locations = [key.number, key.number + 1]
@@ -166,6 +169,15 @@ function PlaceBoard(){
                 </div>
             </div>
             }
+            {iterations !== 5 ?
+            <div className='selection_box'>
+            <h1>Currently Placing:</h1>
+            {
+                (() => {
+                    return(createTurds(iterations))
+                })()
+            }
+        </div> : null}
         </div>
     )
 }
