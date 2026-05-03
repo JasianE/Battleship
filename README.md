@@ -1,29 +1,39 @@
-# Battle Ship
-### A Project Made To Practice Testing and React
-### Really fun to make and taught me some stuff except how to not write bad code
+# Battleship
+
+A browser-based implementation of the classic Battleship game, built in **2021** to practice React, testing, and front-end architecture.
+
+## Overview
+
+This project was created as a learning experience to improve my understanding of component-based design, state management, and testing workflows. While the code isn’t perfect, it reflects meaningful progress in how I approached structuring applications at the time.
 
 ## Features
-### Battle ship the game
-### Placing ships horizontally 
-### randomly generated enemy ship placement
-### enemy chooses random spots to hit with no strategy (based on personal experience)
-### play-by-play annoucements
-### incredible graphics and design
-### niel cicergega
 
-## Live
-### https://battleship-2da8b.web.app
+- Playable Battleship game in the browser  
+- Ship placement (horizontal)  
+- Randomized enemy ship placement  
+- Enemy AI that selects targets randomly  
+- Turn-by-turn game updates and announcements  
+- Custom UI built with React and vanilla CSS  
 
-## Update 2024 
+## Live Demo
 
-### RAHHHHHH I'm back1!!
-### Literally only added a new working link but whatever
-### expect great things to come.......... :DDdDDD
-### While this project wasn't the most complicated project I did, it was the most influencial on me in terms of coding
-### This project used react and vanilla css using some design principles that were recommended by the odin project
+https://battleship-2da8b.web.app
 
-## Update 2025
+## Tech Stack
 
-* Fixed grids issues
-* Added place thing
-* Fixed deployment
+- React  
+- JavaScript (ES6+)  
+- HTML / CSS (Vanilla)  
+
+## Development Notes
+
+This project was influenced by concepts from The Odin Project, particularly around structuring front-end applications and applying basic design principles.
+
+It helped build early intuition for:
+- Code organization  
+- Reusability  
+- Testing practices  
+
+## Reflection
+
+This wasn’t my most complex project, but it was one of the most impactful in shaping how I approach coding. It marked a shift from “just making things work” to thinking more intentionally about structure and maintainability.
